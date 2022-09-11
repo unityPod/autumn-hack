@@ -1,25 +1,24 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import logo from '../src/assets/logo.png';
 import { useState } from "react";
 // import Input from '../Forms/Inputs/Input';
 // import CustomButton from '../Forms/CustomButton/CustomButton';
-import {
-    getAuth,
-    onAuthStateChanged,
-    signInWithEmailAndPassword,
-} from 'firebase/auth';
-import {
-    getFirestore,
-    collection,
-    where,
-    query,
-    getDocs
-} from 'firebase/firestore';
-import "../firebase";
+// import {
+//     getAuth,
+//     onAuthStateChanged,
+//     signInWithEmailAndPassword,
+// } from 'firebase/auth';
+// import {
+//     getFirestore,
+//     collection,
+//     where,
+//     query,
+//     getDocs
+// } from 'firebase/firestore';
+// import "../firebase";
 
-const auth = getAuth();
-const firestore = getFirestore();
+// const auth = getAuth();
+// const firestore = getFirestore();
 // Listen for authentication state to change.
 
 
@@ -31,7 +30,7 @@ const firestore = getFirestore();
 // }
 
 
-export default function login({ }) {
+const Login = () => {
     // const [email, setEmail] = useState("");
     // const [password, setPassword] = useState("");
 
@@ -53,7 +52,7 @@ export default function login({ }) {
 
     return (
         <>
-        <form action="signup.html" method="post" id="signup">
+        <form action="/login" method="post" id="signup">
 	        <h1>Login</h1>
 	    <div className="field">
 		    <label htmlFor="email">Email:</label>
@@ -71,3 +70,4 @@ export default function login({ }) {
     );
 }
 
+export default Login; 
