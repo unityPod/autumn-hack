@@ -5,7 +5,7 @@
 }
 
 .container {
-  @apply h-[117px];
+  @apply h-[150px];
 }
 
 .button {

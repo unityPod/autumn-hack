@@ -1,18 +1,22 @@
 import styles from "./Card.module.css";
-import profileimg from "../../../../assets/images/profile-img.svg";
+import { ReactComponent as ProfileImg } from "../../../../assets/images/profile-img.svg";
+interface ICard {
+  username: string;
+  industry: string;
+  location: string;
+}
 
-interface ICard {}
-
-const Card = () => {
+const Card = (props: ICard) => {
+  const { username, industry, location } = props;
   return (
     <div className={styles["container"]}>
       <div>
-        <img src={profileimg} alt="advisor" className={styles["img"]} />
+        <ProfileImg className={styles["img"]} />
       </div>
       <div className="my-4 text-center">
-        <p className={styles["card-username"]}>Ester Howard</p>
-        <p className={styles["card-industry"]}>Retail</p>
-        <p className={styles["card-location"]}>Canada</p>
+        <p className={styles["card-username"]}>{username}</p>
+        <p className={styles["card-industry"]}>{industry}</p>
+        <p className={styles["card-location"]}>{location}</p>
       </div>
       <div>
         <button className={styles["button"]}>View Profile</button>
