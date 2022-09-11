@@ -1,0 +1,7 @@
+.title {
+  @apply font-primary font-[700] text-[28px] leading-[34.13px] text-secondary-600 py-3;
+}
+
+.description {
+  @apply font-secondary font-[400] text-[16px] leading-[16px] tracking-[0.005em] text-primary-100 py-3;
+}

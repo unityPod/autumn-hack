@@ -1,0 +1,26 @@
+.container {
+  @apply w-[306px] h-[285px] box-border bg-secondary-500 flex flex-col items-center my-4 mx-4;
+
+  border: 1px solid rgba(151, 119, 250, 0.5);
+  box-shadow: 0px 8.76px 26.28px rgba(31, 31, 51, 0.06);
+  border-radius: 10px;
+}
+
+.img {
+  @apply w-[110px] h-[110px] mt-3;
+}
+
+.button {
+  @apply w-[110px] h-[50px] bg-primary-500  rounded-[15px] text-secondary-500;
+}
+
+.card-username {
+  @apply font-primary font-[700] text-[18px] leading-[18px] text-secondary-600;
+}
+
+.card-industry {
+  @apply font-secondary font-[400] text-[15px] leading-[16.34px] text-primary-100 not-italic m-1;
+}
+.card-location {
+  @apply font-secondary leading-[21px] text-[14px] font-[400] text-primary-200 my-1;
+}
