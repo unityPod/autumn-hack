@@ -1,12 +1,18 @@
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./Components/login/login";
+import Registration from "./Components/Registration/Registration";
+import Advisor from "./Components/Registration/views/Advisor";
+import JobHunter from "./Components/Registration/views/JobHunter";
 
-function App() {
+const App = () => {
   return (
-   <Routes>
+    <Routes>
       <Route path="/login" element={<Login />} />
-   </Routes>
+      <Route path="/registration" element={<Registration />} />
+      <Route path="/job-hunter" element={<JobHunter />} />
+      <Route path="/advisor" element={<Advisor />} />
+    </Routes>
   );
-}
+};
 
 export default App;

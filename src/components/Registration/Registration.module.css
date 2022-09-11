@@ -1,0 +1,15 @@
+.comapany-title {
+  @apply font-[700] text-[37px] md:text-[69px] leading-[82.8px] font-primary text-secondary-600 max-w-[725px] max-h-[166px] md:mb-3;
+}
+
+.title {
+  @apply font-[700] text-[25px] md:text-[55px] leading-[67.05px] font-primary text-secondary-400 mb-3 md:mb-7;
+}
+
+.button {
+  @apply w-[127px] h-[56px] bg-primary-500 p-[10px_25px] rounded-[10px] text-secondary-500;
+}
+
+.container {
+  @apply bg-primary-600 w-screen h-screen flex flex-col items-center justify-center;
+}
