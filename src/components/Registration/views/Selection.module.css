@@ -1,0 +1,38 @@
+.input {
+  @apply w-[355px] md:w-[500px] lg:w-[770px] h-[80px] bg-primary-600 rounded-[10px] my-3 p-4;
+}
+
+.container {
+  @apply bg-secondary-300 w-full  flex flex-col items-center px-3;
+}
+
+.container-form {
+  @apply flex flex-col h-full;
+}
+
+textarea {
+  resize: none;
+}
+
+.label-text {
+  @apply my-2 font-[400] font-secondary leading-[20px] tracking-[-0.04%] text-[18px] text-primary-500;
+}
+
+.button {
+  @apply w-full md:w-[127px] h-[56px] bg-primary-500 p-[10px_25px] rounded-[10px] text-secondary-500 my-4;
+}
+
+.title {
+  @apply font-primary font-[700] text-[20px] md:text-[35px] text-secondary-400 text-left my-9 leading-[67.05px];
+}
+
+.link {
+  @apply font-primary font-[700] text-[16px] leading-[19.5px] text-secondary-100 my-3 uppercase md:text-[25px] md:my-12;
+}
+.container-selection {
+  @apply w-full  flex flex-col items-center px-3;
+}
+
+.selection-title {
+  @apply font-[700] leading-[55.53px] font-primary text-[15px] lg:text-[36.5px] text-secondary-500 md:text-[35px];
+}
