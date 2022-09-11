@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "./Components/login/login";
+import Login from "./Components/Login/Login";
 import Registration from "./Components/Registration/Registration";
 import Advisor from "./Components/Registration/views/Advisor";
 import JobHunter from "./Components/Registration/views/JobHunter";

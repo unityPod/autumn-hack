@@ -3,7 +3,9 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import styles from "./Login.module.css";
 import config from "../../config";
+import login from "../../assets/login.jpg";
 
 function Login(){
     const auth = getAuth(config);
@@ -27,15 +29,17 @@ function Login(){
     }
     return (
         <>
-        <div className="main">
-            <div className="App">
-                <h1>Email</h1>
-                <input type={"email"} placeholder="please enter your email" onChange={(e) => setEmail(e.target.value)}/>
-                <h1>Password</h1>
-                <input type={"password"} placeholder="please enter your password" onChange={(e) => setPassword(e.target.value)}/>
-                <button onClick={signIn}>Sign In</button>
+        
+        <div className={styles["container"]}>
+            <img className={styles["login-img"]} src={login} />
+            <div className={styles["login-section"]}>
+                <p className={styles["description"]}>Welcome back, please login into your account</p>
+                <h2 className={styles["title"]}>Email</h2>
+                <input className={styles["input"]} type={"email"} placeholder="please enter your email" onChange={(e) => setEmail(e.target.value)}/>
+                <h2 className={styles["title"]}>Password</h2>
+                <input className={styles["input"]} type={"password"} placeholder="please enter your password" onChange={(e) => setPassword(e.target.value)}/>
+                <button className={styles["button"]} onClick={signIn}>Sign In</button>
             </div>
-
         </div>
         </>
     );
