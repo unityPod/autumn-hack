@@ -10,11 +10,7 @@ interface ISlideOver {
 }
 
 const SlideOver = (props: ISlideOver) => {
-<<<<<<< HEAD
-  const { children, fullScreen, open, onClose } = props;
-=======
   const { children, open, onClose } = props;
->>>>>>> af4a674b6b143ef68702c9e983af88972214d58d
   const handleClose = () => onClose(false);
 
   return (
