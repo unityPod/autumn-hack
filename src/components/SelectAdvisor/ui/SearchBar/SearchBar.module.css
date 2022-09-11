@@ -1,0 +1,13 @@
+.input-container {
+  @apply w-[325px] md:w-[500px] lg:w-[750px] bg-secondary-500 rounded-[15px] box-border my-6 h-[60px] lg:h-[80px] p-3;
+  border: 1px solid rgba(6, 18, 36, 0.1);
+  box-shadow: 0px 20px 60px -6px rgba(0, 0, 0, 0.04);
+}
+
+.container {
+  @apply h-[150px];
+}
+
+.button {
+  @apply w-[110px] h-[50px] bg-primary-500  rounded-[15px] text-secondary-500 relative bottom-[79px] lg:bottom-[99px] left-[211px] md:left-[385px] lg:left-[636px] lg:h-[70px];
+}
