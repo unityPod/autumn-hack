@@ -1,4 +1,5 @@
 import styles from "./Card.module.css";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as ProfileImg } from "../../../../assets/images/profile-img.svg";
 interface ICard {
   username: string;
@@ -7,6 +8,12 @@ interface ICard {
 }
 
 const Card = (props: ICard) => {
+
+  const navigate = useNavigate();
+  const navigateToContacts = () => {
+    navigate('/profile');
+  };
+
   const { username, industry, location } = props;
   return (
     <div className={styles["container"]}>
@@ -19,7 +26,7 @@ const Card = (props: ICard) => {
         <p className={styles["card-location"]}>{location}</p>
       </div>
       <div>
-        <button className={styles["button"]}>View Profile</button>
+        <button onClick={navigateToContacts} className={styles["button"]}>View Profile</button>
       </div>
     </div>
   );

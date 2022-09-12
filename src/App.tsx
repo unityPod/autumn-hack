@@ -6,6 +6,7 @@ import SelectAdvisor from "./components/SelectAdvisor";
 import JobHunter from "./components/Registration/views/JobHunter";
 import Advisor from "./components/Registration/views/Advisor";
 import Login from "./components/Login/login";
+import ProfileAdvisor from "./components/Profile/ProfileAdvisor";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/advisor" element={<Advisor />} />
       <Route path="/selectadvisor" element={<SelectAdvisor />} />
       <Route path="/calendly" element={<Calendar />} />
+      <Route path="/profile" element={<ProfileAdvisor />} />
     </Routes>
   );
 };
