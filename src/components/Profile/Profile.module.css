@@ -1,0 +1,40 @@
+.map-container {
+    width: 50%; 
+    height: 50vh; 
+}
+
+.container {
+    @apply bg-primary-600 w-screen h-screen flex flex-col items-center justify-center;
+  }
+
+.small-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 250px; 
+    height: 250px; 
+    margin: 30px; 
+}
+
+.title {
+    @apply font-[800] text-[25px] md:text-[50px] leading-[55.05px] font-primary text-secondary-400 mt-16 pt-2;
+  }
+
+.title1 {
+    @apply font-[800] text-[25px] md:text-[50px] leading-[55.05px] font-primary text-secondary-400;
+  }
+
+.Bio {
+    @apply font-[500] text-[25px] md:text-[25px] leading-[55.05px] font-primary text-secondary-400;
+}
+
+.location {
+    @apply font-[300] text-[16px] md:text-[40px] leading-[45px] font-primary text-secondary-400 mb-3;
+  }
+
+.excerpt {
+    width: 80%; 
+    height: 300px; 
+}
