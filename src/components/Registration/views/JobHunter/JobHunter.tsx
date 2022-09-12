@@ -4,6 +4,7 @@ import styles from "../Selection.module.css";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import config from "../../../../config";
 
+
 type Inputs = {
   username: string;
   email: string;
@@ -104,9 +105,7 @@ const JobHunter = () => {
           placeholder="Enter Your Password"
           className={styles["input"]}
           {...register("password", {
-            required: "Please enter your password",
-            /* eslint-disable */
-            pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            required: "Please enter your password"
           })}
           id="password"
           type={password}
@@ -114,9 +113,6 @@ const JobHunter = () => {
         />
         {errors.password?.type === "required" && (
           <span className="mb-4 text-error">Your Password Is Required</span>
-        )}
-        {errors.password?.type === "pattern" && (
-          <span className="mb-4 text-error">Please Enter A Valid Password</span>
         )}
 
         <label className={styles["label-text"]} htmlFor="resume">

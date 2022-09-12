@@ -11,6 +11,7 @@ type Inputs = {
   location: string;
   biography: string;
   role: string;
+  calendarId: string; 
 };
 
 const Advisor = () => {
@@ -95,16 +96,14 @@ const Advisor = () => {
         {errors.email?.type === "pattern" && (
           <span className="mb-4 text-error">Please Enter A Valid Email</span>
         )}
-                <label htmlFor="password" className={styles["label-text"]}>
+        <label htmlFor="password" className={styles["label-text"]}>
           Password
         </label>
         <input
           placeholder="Enter Your Password"
           className={styles["input"]}
           {...register("password", {
-            required: "Please enter your password",
-            /* eslint-disable */
-            pattern: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+            required: "Please enter your password"
           })}
           id="password"
           type={password}
@@ -112,9 +111,6 @@ const Advisor = () => {
         />
         {errors.password?.type === "required" && (
           <span className="mb-4 text-error">Your Password Is Required</span>
-        )}
-        {errors.password?.type === "pattern" && (
-          <span className="mb-4 text-error">Please Enter A Valid Password</span>
         )}
 
         <label className={styles["label-text"]} htmlFor="location">
@@ -163,6 +159,21 @@ const Advisor = () => {
         )}
         {errors.biography?.type === "maxLength" && (
           <span className="mb-4 text-error">You have reached the limit!</span>
+        )}
+
+      <label htmlFor="calendarId" className={styles["label-text"]}>
+          Calendly Scheduling Page Id
+        </label>
+        <input
+          placeholder="Enter Your Calendly Id"
+          className={styles["input"]}
+          {...register("calendarId", {
+            required: "Please enter your calendarId",
+          })}
+          id="calendarId"
+        />
+        {errors.calendarId?.type === "required" && (
+          <span className="mb-4 text-error">Your CalendarId Is Required</span>
         )}
 
         <label className={styles["label-text"]}>Role</label>
