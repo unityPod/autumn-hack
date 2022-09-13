@@ -1,21 +1,18 @@
 .map-container {
-    width: 50%; 
-    height: 50vh; 
+    @apply w-3/6 h-3/6; 
 }
+
 
 .container {
     @apply bg-primary-600 w-screen h-screen flex flex-col items-center justify-center;
   }
 
 .small-container{
-    display: flex;
-    flex-direction: row;
+    @apply flex flex-row;
 }
 
 .img {
-    width: 250px; 
-    height: 250px; 
-    margin: 30px; 
+    @apply w-72 h-72 m-8;
 }
 
 .title {
@@ -35,6 +32,5 @@
   }
 
 .excerpt {
-    width: 80%; 
-    height: 300px; 
+    @apply w-4/5 h-72; 
 }
